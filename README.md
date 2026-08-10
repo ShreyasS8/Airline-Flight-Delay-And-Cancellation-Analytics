@@ -29,10 +29,13 @@ Flight delays and cancellations cause significant revenue loss for airlines and 
 📦 Airline-Flight-Analytics
  ┣ 📂 EDA/
  ┃ ┗ 📜 flights_eda.ipynb                 # Comprehensive Exploratory Data Analysis
+ ┣ 📂 Power_BI/
+ ┃ ┣ 📜 Flight Delay-Dashboard.pbix       # Interactive Power BI Report (Git LFS)
+ ┃ ┗ 📜 Flight Delay-Dashboard.pdf        # Executive Dashboard Summary (PDF)
  ┣ 📜 data_clearning_and_processing.ipynb # Core data cleaning & feature engineering pipeline
  ┗ 📜 README.md                           # Project Documentation
 ```
-*(Note: The raw datasets, `.pbix` dashboard files, and project documents are not included in this repository due to size constraints. This repository focuses on the Python data engineering and EDA pipeline).*
+*(Note: Raw datasets are excluded due to file size limits. Power BI dashboard source files (`.pbix` managed via Git LFS) and PDF exports are included in the `Power_BI/` directory).*
 
 ## 🔍 Key Project Phases
 
@@ -47,10 +50,14 @@ Flight delays and cancellations cause significant revenue loss for airlines and 
 - Investigated the correlation between time of day, day of the week, and likelihood of delays.
 - Generated over 15 distinct, insight-driven visualizations interpreting the business impact of the findings.
 
-### 3. Executive Dashboarding (Power BI)
-- Integrated the cleaned dataset into Power BI.
-- Developed interactive visuals for tracking total flights, cancellation rates, average delay times, and airline performance rankings.
-- Built a user-friendly layout aligned with modern design aesthetics and corporate reporting standards.
+### 3. Executive Dashboarding (`Power_BI/`)
+- **Interactive Power BI Report (`Flight Delay-Dashboard.pbix`):** Dynamic reporting tool supporting interactive filtering across carriers, time periods, and delay types.
+- **Executive Summary PDF (`Flight Delay-Dashboard.pdf`):** A pre-rendered visual presentation of the complete dashboard for easy previewing.
+- **Key Dashboard Features & Visuals:**
+  - **KPI Scorecards:** Total Flights (3M records analyzed), Average Delay Minutes, and Cancellation Rate.
+  - **Carrier Comparison:** Visual rankings highlighting most reliable vs delay-prone airlines.
+  - **Temporal Heatmaps:** Flight congestion and delay probability across hours of the day and days of the week.
+  - **Root Cause Analysis:** Operational breakdown across Carrier, Weather, National Air System (NAS), Security, and Late Aircraft delays.
 
 ## 📈 Key Insights
 *(You can customize this section once you pull the final insights from your EDA/Presentation)*

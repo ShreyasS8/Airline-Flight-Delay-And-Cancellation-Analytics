@@ -4,6 +4,10 @@
 # But allow these specific files and directories
 !EDA/
 !EDA/flights_eda.ipynb
+!Power_BI/
+!Power_BI/*
 !data_clearning_and_processing.ipynb
 !README.md
 !.gitignore
+!.gitattributes
+
